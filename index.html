@@ -4,26 +4,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Capital and Profit Calculation</title>
+<title>Background Video Example</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Lustria&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-<h2>Capital and Profit Calculation</h2>
+<video id="background-video" autoplay loop muted>
+  <source src="trader.mp4" type="video/mp4">
+</video>
 
-<label for="capital">Enter your initial capital:</label>
-<input type="number" id="capital" placeholder="Enter capital" required><br>
+<div id="overlay"></div>
 
-<label for="days">Enter the number of days:</label>
-<input type="number" id="days" placeholder="Enter days" required><br>
+<!-- Your content goes here -->
+<div id="content">
+  <h1>Welcome to My Website</h1>
+  <h2>Capital and Profit Calculation</h2>
 
-<button onclick="calculateCapitalAndProfit()">Calculate</button>
+  <label for="capital">Enter your initial capital:</label> <br>
+  <input type="number" id="capital" placeholder="Enter capital" required><br>
 
+  <label for="days">Enter the number of days:</label> <br>
+  <input type="number" id="days" placeholder="Enter days" required><br>
+
+  <button onclick="calculateCapitalAndProfit()">Calculate</button>
+  
 <p id="result"></p>
+</div>
+
+
+
 
 <script src="script.js"></script>
+</div>
 
 </body>
 </html>
 
-</body>
-</html>
